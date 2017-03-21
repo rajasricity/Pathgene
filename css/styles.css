@@ -1,0 +1,631 @@
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.myBtn{
+  width:45px;
+  height:45px;
+  color:#fff;
+  background-color: #E91E63;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+}
+.outDiv{
+ display: table;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+}
+.inDiv{
+  display: table-cell;
+  vertical-align: middle;
+  color:#fff;
+  background-color: #E91E63;
+  border: none;
+  border-radius: 50px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.myUl{
+  list-style-type: none;
+  padding: 5px;
+  display: none;
+}
+
+.myUl li{
+padding:10px;
+background: #116996;
+color:#fff;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+margin: 2px;
+float:left;
+clear:left;
+border-radius: 10px;
+
+}
+
+.disabled{
+    pointer-events:none;
+    opacity:0.4;
+}
+.myInput{
+width:100%;background: transparent;height:40px;border:0px;border-bottom: 1px solid #000;outline: none;font-size: 20px;
+}
+
+
+.shortcut-tile {
+  margin: 0px 0px 24px;
+  display: block;
+  border-radius: 2px;
+}
+
+.shortcut-tile.tile-primary {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-primary .tile-heading,
+.shortcut-tile.tile-primary .tile-body,
+.shortcut-tile.tile-primary .tile-footer {
+  background: #00C4B9;
+}
+.shortcut-tile.tile-primary:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-primary:hover .tile-heading,
+.shortcut-tile.tile-primary:hover .tile-body,
+.shortcut-tile.tile-primary:hover .tile-footer {
+  background: #0398db;
+}
+.shortcut-tile.tile-inverse {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-inverse .tile-heading,
+.shortcut-tile.tile-inverse .tile-body,
+.shortcut-tile.tile-inverse .tile-footer {
+  background: #9e9e9e;
+}
+.shortcut-tile.tile-inverse:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-inverse:hover .tile-heading,
+.shortcut-tile.tile-inverse:hover .tile-body,
+.shortcut-tile.tile-inverse:hover .tile-footer {
+  background: #919191;
+}
+.shortcut-tile.tile-midnightblue {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-midnightblue .tile-heading,
+.shortcut-tile.tile-midnightblue .tile-body,
+.shortcut-tile.tile-midnightblue .tile-footer {
+  background: #00A69B;
+}
+.shortcut-tile.tile-midnightblue:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-midnightblue:hover .tile-heading,
+.shortcut-tile.tile-midnightblue:hover .tile-body,
+.shortcut-tile.tile-midnightblue:hover .tile-footer {
+  background: #2d3940;
+}
+.shortcut-tile.tile-sky {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-sky .tile-heading,
+.shortcut-tile.tile-sky .tile-body,
+.shortcut-tile.tile-sky .tile-footer {
+  background: #009688;
+}
+.shortcut-tile.tile-sky:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-sky:hover .tile-heading,
+.shortcut-tile.tile-sky:hover .tile-body,
+.shortcut-tile.tile-sky:hover .tile-footer {
+  background: #007d71;
+}
+.shortcut-tile.tile-orange {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-orange .tile-heading,
+.shortcut-tile.tile-orange .tile-body,
+.shortcut-tile.tile-orange .tile-footer {
+  background: #ff9800;
+}
+.shortcut-tile.tile-orange:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-orange:hover .tile-heading,
+.shortcut-tile.tile-orange:hover .tile-body,
+.shortcut-tile.tile-orange:hover .tile-footer {
+  background: #e68900;
+}
+.shortcut-tile.tile-indigo {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-indigo .tile-heading,
+.shortcut-tile.tile-indigo .tile-body,
+.shortcut-tile.tile-indigo .tile-footer {
+  background: #3f51b5;
+}
+.shortcut-tile.tile-indigo:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-indigo:hover .tile-heading,
+.shortcut-tile.tile-indigo:hover .tile-body,
+.shortcut-tile.tile-indigo:hover .tile-footer {
+  background: #3849a2;
+}
+.shortcut-tile.tile-green {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-green .tile-heading,
+.shortcut-tile.tile-green .tile-body,
+.shortcut-tile.tile-green .tile-footer {
+  background: #4caf50;
+}
+.shortcut-tile.tile-green:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-green:hover .tile-heading,
+.shortcut-tile.tile-green:hover .tile-body,
+.shortcut-tile.tile-green:hover .tile-footer {
+  background: #449d48;
+}
+.shortcut-tile.tile-blue {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-blue .tile-heading,
+.shortcut-tile.tile-blue .tile-body,
+.shortcut-tile.tile-blue .tile-footer {
+  background: #2196f3;
+}
+.shortcut-tile.tile-blue:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-blue:hover .tile-heading,
+.shortcut-tile.tile-blue:hover .tile-body,
+.shortcut-tile.tile-blue:hover .tile-footer {
+  background: #0d8aee;
+}
+.shortcut-tile.tile-magenta {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-magenta .tile-heading,
+.shortcut-tile.tile-magenta .tile-body,
+.shortcut-tile.tile-magenta .tile-footer {
+  background: #e91e63;
+}
+.shortcut-tile.tile-magenta:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-magenta:hover .tile-heading,
+.shortcut-tile.tile-magenta:hover .tile-body,
+.shortcut-tile.tile-magenta:hover .tile-footer {
+  background: #d81557;
+}
+.shortcut-tile.tile-purple {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-purple .tile-heading,
+.shortcut-tile.tile-purple .tile-body,
+.shortcut-tile.tile-purple .tile-footer {
+  background: #9c27b0;
+}
+.shortcut-tile.tile-purple:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-purple:hover .tile-heading,
+.shortcut-tile.tile-purple:hover .tile-body,
+.shortcut-tile.tile-purple:hover .tile-footer {
+  background: #89229b;
+}
+.shortcut-tile.tile-brown {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-brown .tile-heading,
+.shortcut-tile.tile-brown .tile-body,
+.shortcut-tile.tile-brown .tile-footer {
+  background: #795548;
+}
+.shortcut-tile.tile-brown:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-brown:hover .tile-heading,
+.shortcut-tile.tile-brown:hover .tile-body,
+.shortcut-tile.tile-brown:hover .tile-footer {
+  background: #694a3e;
+}
+.shortcut-tile.tile-grape {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-grape .tile-heading,
+.shortcut-tile.tile-grape .tile-body,
+.shortcut-tile.tile-grape .tile-footer {
+  background: #cddc39;
+}
+.shortcut-tile.tile-grape:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-grape:hover .tile-heading,
+.shortcut-tile.tile-grape:hover .tile-body,
+.shortcut-tile.tile-grape:hover .tile-footer {
+  background: #c6d626;
+}
+.shortcut-tile.tile-toyo {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-toyo .tile-heading,
+.shortcut-tile.tile-toyo .tile-body,
+.shortcut-tile.tile-toyo .tile-footer {
+  background: #ffc107;
+}
+.shortcut-tile.tile-toyo:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-toyo:hover .tile-heading,
+.shortcut-tile.tile-toyo:hover .tile-body,
+.shortcut-tile.tile-toyo:hover .tile-footer {
+  background: #ecb100;
+}
+.shortcut-tile.tile-alizarin {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-alizarin .tile-heading,
+.shortcut-tile.tile-alizarin .tile-body,
+.shortcut-tile.tile-alizarin .tile-footer {
+  background: #ff5722;
+}
+.shortcut-tile.tile-alizarin:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-alizarin:hover .tile-heading,
+.shortcut-tile.tile-alizarin:hover .tile-body,
+.shortcut-tile.tile-alizarin:hover .tile-footer {
+  background: #ff4408;
+}
+
+.tile-heading,
+.tile-body,
+.tile-footer {
+  -webkit-transition: 0.05s ease-in;
+  -o-transition: 0.05s ease-in;
+  transition: 0.05s ease-in;
+}
+
+.shortcut-tile .tile-body {
+  padding: 12px;
+  font-size: 30px;
+  line-height: 30px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.shortcut-tile .tile-body i {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.05s ease-in;
+  -o-transition: 0.05s ease-in;
+  transition: 0.05s ease-in;
+}
+.shortcut-tile .tile-body .pull-right {
+  line-height: 0;
+}
+.shortcut-tile .tile-body .pull-right .badge {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.25);
+  zoom: 1;
+  background-color: transparent\9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000, endColorstr=#40000000)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000, endColorstr=#40000000);
+}
+.shortcut-tile .tile-footer {
+  text-transform: none;
+  text-align: right;
+  padding: 8px 12px;
+  letter-spacing: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.shortcut-tile:hover {
+  text-decoration: none;
+}
+.shortcut-tile:hover i {
+  color: #fff;
+}
+.shortcut-tile.tile-info {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-info .tile-heading,
+.shortcut-tile.tile-info .tile-body,
+.shortcut-tile.tile-info .tile-footer {
+  background: #00bcd4;
+}
+.shortcut-tile.tile-info:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-info:hover .tile-heading,
+.shortcut-tile.tile-info:hover .tile-body,
+.shortcut-tile.tile-info:hover .tile-footer {
+  background: #00a5bb;
+}
+.shortcut-tile.tile-success {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-success .tile-heading,
+.shortcut-tile.tile-success .tile-body,
+.shortcut-tile.tile-success .tile-footer {
+  background: #8bc34a;
+}
+.shortcut-tile.tile-success:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-success:hover .tile-heading,
+.shortcut-tile.tile-success:hover .tile-body,
+.shortcut-tile.tile-success:hover .tile-footer {
+  background: #7eb73d;
+}
+.shortcut-tile.tile-danger {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-danger .tile-heading,
+.shortcut-tile.tile-danger .tile-body,
+.shortcut-tile.tile-danger .tile-footer {
+  background: #e51c23;
+}
+.shortcut-tile.tile-danger:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-danger:hover .tile-heading,
+.shortcut-tile.tile-danger:hover .tile-body,
+.shortcut-tile.tile-danger:hover .tile-footer {
+  background: #d0181e;
+}
+.shortcut-tile.tile-warning {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-warning .tile-heading,
+.shortcut-tile.tile-warning .tile-body,
+.shortcut-tile.tile-warning .tile-footer {
+  background: #ffeb3b;
+}
+.shortcut-tile.tile-warning:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-warning:hover .tile-heading,
+.shortcut-tile.tile-warning:hover .tile-body,
+.shortcut-tile.tile-warning:hover .tile-footer {
+  background: #ffe821;
+}
+.shortcut-tile.tile-primary {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-primary .tile-heading,
+.shortcut-tile.tile-primary .tile-body,
+.shortcut-tile.tile-primary .tile-footer {
+  background: #00C4B9;
+}
+.shortcut-tile.tile-primary:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-primary:hover .tile-heading,
+.shortcut-tile.tile-primary:hover .tile-body,
+.shortcut-tile.tile-primary:hover .tile-footer {
+  background: #0398db;
+}
+.shortcut-tile.tile-inverse {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-inverse .tile-heading,
+.shortcut-tile.tile-inverse .tile-body,
+.shortcut-tile.tile-inverse .tile-footer {
+  background: #9e9e9e;
+}
+.shortcut-tile.tile-inverse:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-inverse:hover .tile-heading,
+.shortcut-tile.tile-inverse:hover .tile-body,
+.shortcut-tile.tile-inverse:hover .tile-footer {
+  background: #919191;
+}
+.shortcut-tile.tile-midnightblue {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-midnightblue .tile-heading,
+.shortcut-tile.tile-midnightblue .tile-body,
+.shortcut-tile.tile-midnightblue .tile-footer {
+  background: #00A69B;
+}
+.shortcut-tile.tile-midnightblue:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-midnightblue:hover .tile-heading,
+.shortcut-tile.tile-midnightblue:hover .tile-body,
+.shortcut-tile.tile-midnightblue:hover .tile-footer {
+  background: #2d3940;
+}
+.shortcut-tile.tile-sky {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-sky .tile-heading,
+.shortcut-tile.tile-sky .tile-body,
+.shortcut-tile.tile-sky .tile-footer {
+  background: #009688;
+}
+.shortcut-tile.tile-sky:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-sky:hover .tile-heading,
+.shortcut-tile.tile-sky:hover .tile-body,
+.shortcut-tile.tile-sky:hover .tile-footer {
+  background: #007d71;
+}
+.shortcut-tile.tile-orange {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-orange .tile-heading,
+.shortcut-tile.tile-orange .tile-body,
+.shortcut-tile.tile-orange .tile-footer {
+  background: #ff9800;
+}
+.shortcut-tile.tile-orange:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-orange:hover .tile-heading,
+.shortcut-tile.tile-orange:hover .tile-body,
+.shortcut-tile.tile-orange:hover .tile-footer {
+  background: #e68900;
+}
+.shortcut-tile.tile-indigo {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-indigo .tile-heading,
+.shortcut-tile.tile-indigo .tile-body,
+.shortcut-tile.tile-indigo .tile-footer {
+  background: #3f51b5;
+}
+.shortcut-tile.tile-indigo:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-indigo:hover .tile-heading,
+.shortcut-tile.tile-indigo:hover .tile-body,
+.shortcut-tile.tile-indigo:hover .tile-footer {
+  background: #3849a2;
+}
+.shortcut-tile.tile-green {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-green .tile-heading,
+.shortcut-tile.tile-green .tile-body,
+.shortcut-tile.tile-green .tile-footer {
+  background: #4caf50;
+}
+.shortcut-tile.tile-green:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-green:hover .tile-heading,
+.shortcut-tile.tile-green:hover .tile-body,
+.shortcut-tile.tile-green:hover .tile-footer {
+  background: #449d48;
+}
+.shortcut-tile.tile-blue {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-blue .tile-heading,
+.shortcut-tile.tile-blue .tile-body,
+.shortcut-tile.tile-blue .tile-footer {
+  background: #2196f3;
+}
+.shortcut-tile.tile-blue:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-blue:hover .tile-heading,
+.shortcut-tile.tile-blue:hover .tile-body,
+.shortcut-tile.tile-blue:hover .tile-footer {
+  background: #0d8aee;
+}
+.shortcut-tile.tile-magenta {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-magenta .tile-heading,
+.shortcut-tile.tile-magenta .tile-body,
+.shortcut-tile.tile-magenta .tile-footer {
+  background: #e91e63;
+}
+.shortcut-tile.tile-magenta:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-magenta:hover .tile-heading,
+.shortcut-tile.tile-magenta:hover .tile-body,
+.shortcut-tile.tile-magenta:hover .tile-footer {
+  background: #d81557;
+}
+.shortcut-tile.tile-purple {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-purple .tile-heading,
+.shortcut-tile.tile-purple .tile-body,
+.shortcut-tile.tile-purple .tile-footer {
+  background: #9c27b0;
+}
+.shortcut-tile.tile-purple:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-purple:hover .tile-heading,
+.shortcut-tile.tile-purple:hover .tile-body,
+.shortcut-tile.tile-purple:hover .tile-footer {
+  background: #89229b;
+}
+.shortcut-tile.tile-brown {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-brown .tile-heading,
+.shortcut-tile.tile-brown .tile-body,
+.shortcut-tile.tile-brown .tile-footer {
+  background: #795548;
+}
+.shortcut-tile.tile-brown:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-brown:hover .tile-heading,
+.shortcut-tile.tile-brown:hover .tile-body,
+.shortcut-tile.tile-brown:hover .tile-footer {
+  background: #694a3e;
+}
+.shortcut-tile.tile-grape {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-grape .tile-heading,
+.shortcut-tile.tile-grape .tile-body,
+.shortcut-tile.tile-grape .tile-footer {
+  background: #cddc39;
+}
+.shortcut-tile.tile-grape:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-grape:hover .tile-heading,
+.shortcut-tile.tile-grape:hover .tile-body,
+.shortcut-tile.tile-grape:hover .tile-footer {
+  background: #c6d626;
+}
+.shortcut-tile.tile-toyo {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-toyo .tile-heading,
+.shortcut-tile.tile-toyo .tile-body,
+.shortcut-tile.tile-toyo .tile-footer {
+  background: #ffc107;
+}
+.shortcut-tile.tile-toyo:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-toyo:hover .tile-heading,
+.shortcut-tile.tile-toyo:hover .tile-body,
+.shortcut-tile.tile-toyo:hover .tile-footer {
+  background: #ecb100;
+}
+.shortcut-tile.tile-alizarin {
+  color: #ffffff !important;
+}
+.shortcut-tile.tile-alizarin .tile-heading,
+.shortcut-tile.tile-alizarin .tile-body,
+.shortcut-tile.tile-alizarin .tile-footer {
+  background: #ff5722;
+}
+.shortcut-tile.tile-alizarin:hover {
+  color: #ffffff;
+}
+.shortcut-tile.tile-alizarin:hover .tile-heading,
+.shortcut-tile.tile-alizarin:hover .tile-body,
+.shortcut-tile.tile-alizarin:hover .tile-footer {
+  background: #ff4408;
+}
+.myFooter{
+  position:fixed;bottom:0px;width:100%;z-index:999;padding:10px;background-color: #E91E63;color:#fff;text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
