@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.fontAwesome.css">
 </head>
 <body>
 <div class="myFooter">
@@ -28,72 +29,15 @@ PATHGENE @ ALLRIGHTS RESERVED
     </div>
 </div>
 <div class="col-xs-3 pull-right" style="text-align: right">
-<button class="myBtn"><i class="fa fa-arrow-down" onclick="logout();"></i></button><br><br>
+<button class="myBtn"><i class="fa fa-arrow-left" onclick="back();"></i></button><br><br>
 </div>
     </div>
 </div>
 <br><br><br><br>
     <div class="container">
-
-<div class="row">
-    <div class="col-xs-6">
-                <a href="Profile.html" class="shortcut-tile tile-magenta">
-					<div class="tile-body">
-						<div class="pull-left"><i class="fa fa-user"></i></div>
-					</div>
-					<div class="tile-footer">
-						PROFILE
-					</div>
-				</a>
-    </div>
-    <div class="col-xs-6">
-                <a href="Tests.html" class="shortcut-tile tile-magenta">
-					<div class="tile-body">
-						<div class="pull-left"><i class="fa fa-plus"></i></div>
-					</div>
-					<div class="tile-footer">
-						TESTS
-					</div>
-				</a>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-6">
-                <a href="Reports.html" class="shortcut-tile tile-magenta">
-					<div class="tile-body">
-						<div class="pull-left"><i class="fa fa-files-o"></i></div>
-					</div>
-					<div class="tile-footer">
-						REPORTS
-					</div>
-				</a>
-    </div>
-    <div class="col-xs-6">
-                <a href="Invoices.html" class="shortcut-tile tile-magenta">
-					<div class="tile-body">
-						<div class="pull-left"><i class="fa fa-file-o"></i></div>
-					</div>
-					<div class="tile-footer">
-						INVOICES
-					</div>
-				</a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-12">
 <div class="panel panel-primary">
-    <div class="panel-body">
-<h4><b>ABOUT PATHGENE</b></h4>
-<p style="text-align: justify">The Primary objective of this unit is to carry out extensive work both at the basic and applied aspects in the area of Medical sciences. The department has the stat-of-art infrastructure to carry out the work at biochemical, cellular and molecular aspects of Medical Diseases.</p>
-    </div>
-</div>
-<div class="panel panel-primary">
-    <div class="panel-body">
-<p style="text-align: justify">One of the bright example of start up of India. Very Impressive setup with quality control.My best wishes to <b>Dr.Syed</b>.</p>
-<p style="text-align: right"><b>Dr. Shasibala Singh,</b> <br>Director General (Life sciences), <br>DRDO. Delhi.</p>
-    </div>
-</div>
+    <div class="panel-body" style="padding:0px;">
+<div id="data"></div>
     </div>
 </div>
 <div id="connection" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
@@ -127,6 +71,7 @@ PATHGENE @ ALLRIGHTS RESERVED
     $(document).ready(function(){
        connect();
        getUname();
+       $("#data").load(server+"getTests.php?uid="+localStorage.Userno);
     });
 </script>
 </body>

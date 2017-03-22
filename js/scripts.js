@@ -107,3 +107,9 @@ function logout(){
 function home(){
   location.href="Dashboard.html";
 }
+function back(){
+  window.history.back();
+}
+function showTest(trfid){
+$("#"+trfid).slideToggle("slow");
+}
