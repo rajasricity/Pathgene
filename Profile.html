@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/dataTables.fontAwesome.css">
 </head>
 <body>
 <div class="myFooter">
@@ -35,11 +34,7 @@ PATHGENE @ ALLRIGHTS RESERVED
 </div>
 <br><br><br><br>
     <div class="container">
-<div class="panel panel-primary">
-    <div class="panel-body" style="padding:0px;">
-<div id="data"></div>
-    </div>
-</div>
+<div id="pdata"></div>
 <div id="connection" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog" style="padding-top:50%">
     <div class="modal-content">
@@ -71,7 +66,7 @@ PATHGENE @ ALLRIGHTS RESERVED
     $(document).ready(function(){
        connect();
        getUname();
-       $("#data").load(server+"getReports.php?uid="+localStorage.Userno);
+       $("#pdata").load(server+"getProfile.php?uid="+localStorage.Userno);
     });
 </script>
 </body>
