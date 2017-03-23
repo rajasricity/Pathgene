@@ -7,6 +7,7 @@
     <author email="sanarajasekhar@gmail.com" href="http://pathgene.org">
         Pathgene Diagnostics Pvt Ltd.,
     </author>
+    <icon src="icon.png"/>
     <platform name="android">
     <icon src="resources/ldpi.png" density="ldpi" />
     <icon src="resources/mdpi" density="mdpi" />
