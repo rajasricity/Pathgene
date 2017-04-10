@@ -73,6 +73,11 @@ PATHGENE @ ALLRIGHTS RESERVED
        getUname();
        $("#data").load(server+"getReports.php?uid="+localStorage.Userno);
     });
+function showMainReport(tid,trfid){
+  localStorage.setItem("Tid",tid);
+  localStorage.setItem("Trfid",trfid);
+  location.href='showMainReport.html';
+}
 </script>
 </body>
 </html>
