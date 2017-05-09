@@ -2,10 +2,10 @@
 <widget id="org.pathgene.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Pathgene</name>
     <description>
-        Pathgene
+        Pathgene Healthcare
     </description>
     <author email="sanarajasekhar@gmail.com" href="http://pathgene.org">
-        Pathgene Diagnostics Pvt Ltd.,
+        Pathgene Healthcare Pvt Ltd.,
     </author>
     <icon src="icon.png"/>
     <platform name="android">
